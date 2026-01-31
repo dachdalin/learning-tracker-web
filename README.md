@@ -1,16 +1,83 @@
-# React + Vite
+# Learning Tracker App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Track what you’re learning (courses, topics, skills) and your progress over time.
 
-Currently, two official plugins are available:
+## Project Struture
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
 
-## React Compiler
+src/
+ ├─ components/
+ │   ├─ Header.jsx
+ │   ├─ LearningCard.jsx
+ │   ├─ ProgressBar.jsx
+ │   └─ Modal.jsx
+ │
+ ├─ pages/
+ │   ├─ Home.jsx
+ │   └─ AddLearning.jsx
+ │
+ ├─ hooks/
+ │   └─ useLocalStorage.js
+ │
+ ├─ data/
+ │   └─ categories.js
+ │
+ ├─ App.jsx
+ └─ main.jsx
+ ```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technology
 
-## Expanding the ESLint configuration
+*   **Language**: [ReactJs](https:://react.dev)
+*   **Build Tool**: [Vite](https://vitejs.dev/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+Follow these steps to set up and run the project locally.
+
+### Prerequisites
+
+Make sure you have Node.js and npm installed on your system. You can download them from the official Node.js website: [nodejs.org](https://nodejs.org/)
+
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/learning-tracker-web.git
+    cd learning-tracker-web
+    ```
+    (Note: Replace `https://github.com/your-username/learning-tracker-web.git` with the actual repository URL if available, otherwise, this is a placeholder.)
+
+2.  Install the project dependencies:
+    ```bash
+    npm install
+    ```
+
+### Running the Development Server
+
+To start the development server, run:
+
+```bash
+npm run dev
+```
+
+This will typically open the application in your browser at `http://localhost:5173`.
+
+### Building for Production
+
+To build the application for production, run:
+
+```bash
+npm run build
+```
+
+This will create a `dist` folder with the optimized production build.
+
+### Linting
+
+To run the linter and check for code style issues, use:
+
+```bash
+npm run lint
+```
